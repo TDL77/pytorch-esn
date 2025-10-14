@@ -17,11 +17,11 @@ PyTorch-ESN provides a flexible and efficient implementation of Echo State Netwo
 
 ### Key Features
 
-- 🚀 **Fast training**: Reservoir states are computed in one forward pass, only readout layer is trained
-- 🔧 **Flexible**: Support for both offline (ridge regression) and online (gradient-based) training
-- 🏗️ **Deep ESNs**: Multi-layer implementation based on [DeepESN](https://arxiv.org/abs/1712.04323)
-- 🎯 **Memory efficient**: Batch processing support for large datasets
-- ⚡ **GPU accelerated**: Full PyTorch integration with CUDA support
+- **Fast training**: Reservoir states are computed in one forward pass, only readout layer is trained
+- **Flexible**: Support for both offline (ridge regression) and online (gradient-based) training
+- **Deep ESNs**: Multi-layer implementation based on [DeepESN](https://arxiv.org/abs/1712.04323)
+- **Memory efficient**: Batch processing support for large datasets
+- **GPU accelerated**: Full PyTorch integration with CUDA support
 
 ### Research Background
 
@@ -71,7 +71,7 @@ output, hidden = model(input, washout, hidden)
 
 #### Batch-wise Cholesky or Matrix Inverse
 
-✅ **Recommended** for large datasets that don't fit in memory.
+**Recommended** for large datasets that don't fit in memory.
 
 ```python
 from torchesn.nn import ESN
